@@ -1,0 +1,87 @@
+div.result {display: none; }
+div.question {display: none; }
+
+.margin_bottom{
+	margin-bottom: 20px;
+}
+
+div.h_center{
+	text-align: center;
+}
+
+div#question_text {
+	font-weight: bold;
+}
+
+div.index, div.result{
+    height: 200px;
+    width: 400px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+	text-align: center;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font: 85%/140% Arial, Helvetica, sans-serif;
+    width: 800px;
+    max-width: 96%;
+    margin: 0 auto;
+}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+#pagewrap {
+    width: 978px;
+    max-width: 96%;
+    margin: 0 auto;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+.active {
+    background: #71d8e8 !important;
+}
+
+
+/************************************************************************************
+COLUMN
+*************************************************************************************/
+.col {
+    background: #eee;
+    float: left;
+    margin-left: 3.2%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+/* grid2 col */
+.grid2 .col {
+    width: 48.4%;
+}
+/* clear col */
+.grid2 .col:nth-of-type(2n+1) {
+    margin-left: 0;
+    clear: left;
+}
+
+
+/* reset cols to fullwidth */
+@media screen and (max-width: 500px) {
+    .col {
+        width: 100% !important;
+        margin-left: 0 !important;
+        clear: none !important;
+    }
+}
+

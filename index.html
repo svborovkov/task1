@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<title>Testes</title>
+	<link href="index.css" rel="stylesheet">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div class="all_parts">
+	<div class="index">
+		<h2>Technical task</h2>
+		<form action="test.php" method="get">
+			<input id="user_name" class="margin_bottom" name="Name" type="Edit" value=""></input><br>
+			<select name="test_id" class="test_list margin_bottom">
+				<option selected disabled>Choose test</option>
+				<option value="3">Materials</option>
+			</select><br>
+			<input type="submit" value="Submit" id="test_submit">
+		</form>
+	</div>
+
+	<div class="question" id="pagewrap">
+		<div class="h_center">
+			<h2>Question <span class="answer_count">10</span> of <span class="question_count">10</span>.</h2>
+			<div class="progressbar margin_bottom"></div>
+			<div id="question_text" class="margin_bottom" >What color of sea?</div>
+		</div>
+		<form>
+		<div id="answers" class="wrapper grid2">
+			<article value="1" class="col">Gray</article>
+			<article value="2" class="col">Blue</article>
+		</div>
+		<input type="hidden" value="" id="question_input"/>
+		<div class="h_center">
+			<input type="submit" value="Next question" id="answer_submit"/>
+		</div>
+	</div>
+
+	<div class="result">
+		<h2>Thanks, <span class="user_name"></span></h2>
+		You responded correctly to <span class="correct_count">5</span> out of <span class="question_count">10</span> answers.
+	</div>
+</div>
+</body>
+</html>
